@@ -66,6 +66,22 @@ ul {
   margin: 0;
 }
 
+/*hidden-title*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*header*/
 
 #studio {
@@ -162,7 +178,6 @@ ul.mail-and-tel li:not(:last-child) {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 
   text-align: center;
   background-color: var(--hero-and-footer-bgcolor);
@@ -210,7 +225,8 @@ ul.mail-and-tel li:not(:last-child) {
 /*first section */
 
 .first-main-section {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .services li {
@@ -223,11 +239,10 @@ ul.mail-and-tel li:not(:last-child) {
 
 .services {
   display: flex;
-  justify-content: space-between;
 }
 
 .first-main-section h3 {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -249,7 +264,7 @@ ul.mail-and-tel li:not(:last-child) {
 
 .second-main-section {
   text-align: center;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .second-section-title {
@@ -293,12 +308,16 @@ ul.img-list li:not(:last-child) {
   background-color: var(--personal-bg);
 }
 
+.card-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .worderks-description {
   display: flex;
 }
 
 .worderks-description h3 {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -308,8 +327,6 @@ ul.img-list li:not(:last-child) {
 }
 
 .worderks-description p {
-  padding-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -336,8 +353,6 @@ li.card:not(:last-child) {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
 
   background-color: var(--hero-and-footer-bgcolor);
 }
@@ -383,12 +398,16 @@ li.card:not(:last-child) {
 
 /*portfolio*/
 
+.filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 #portfolio {
   color: var(--accent-color);
 }
 
 ul.button-list {
-  margin-top: 94px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -409,7 +428,7 @@ ul.button-list li {
   text-align: center;
 
   color: var(--title-color);
-  border-color: var(--personal-bg);
+  
 }
 
 .button-list li:not(:last-child) {
@@ -427,7 +446,6 @@ ul.button-list li {
 /*card*/
 
 .filter-list {
-  margin-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
 }
