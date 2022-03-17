@@ -408,12 +408,9 @@ li.card:not(:last-child) {
 }
 
 ul.button-list {
+  display: flex;
   margin-bottom: 50px;
-  text-align: center;
-}
-
-ul.button-list li {
-  display: inline-block;
+  justify-content: center;
 }
 
 .portfolio-button {
@@ -427,8 +424,7 @@ ul.button-list li {
   cursor: pointer;
   text-align: center;
 
-  color: var(--title-color);
-  
+  background-color: var(--personal-bg);
 }
 
 .button-list li:not(:last-child) {
@@ -475,11 +471,14 @@ ul.button-list li {
 .filter-card {
   border-bottom: 1px solid #eeeeee;
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .filter-card:nth-child(3n) {
   margin-right: 0px;
+}
+
+.filter-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 .box > p {
